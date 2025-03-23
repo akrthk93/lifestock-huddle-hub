@@ -19,6 +19,7 @@ import Households from "@/pages/Households";
 import Settings from "@/pages/Settings";
 import NotFound from "@/pages/NotFound";
 import HouseholdDetail from "@/pages/HouseholdDetail";
+import History from "@/pages/History";
 
 const queryClient = new QueryClient();
 
@@ -36,6 +37,7 @@ const App = () => (
                 <Route path="inventory" element={<Inventory />} />
                 <Route path="categories" element={<Categories />} />
                 <Route path="shopping-list" element={<ShoppingList />} />
+                <Route path="history" element={<History />} />
                 <Route path="households" element={<Households />} />
                 <Route path="households/:id" element={<HouseholdDetail />} />
                 <Route path="settings" element={<Settings />} />

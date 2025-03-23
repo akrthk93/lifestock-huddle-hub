@@ -106,6 +106,14 @@
   .transition-all-300 {
     @apply transition-all duration-300 ease-in-out;
   }
+
+  .hover-scale {
+    @apply transition-transform duration-200 hover:scale-105;
+  }
+
+  .focus-ring {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background;
+  }
 }
 
 /* Custom scrollbar */
@@ -125,4 +133,21 @@
 /* Focus styles */
 .focus-ring {
   @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background;
+}
+
+/* Chart & Visualization Styles */
+.recharts-default-tooltip {
+  @apply !bg-card !border-border !shadow-md !rounded-md !p-2;
+}
+
+.recharts-tooltip-label {
+  @apply !text-foreground !font-medium !mb-1;
+}
+
+.recharts-tooltip-item {
+  @apply !text-xs;
+}
+
+.recharts-legend-item-text {
+  @apply !text-muted-foreground;
 }
