@@ -51,6 +51,7 @@ import {
   Plus,
   RefreshCw,
   Search,
+  ShoppingCart,
   Tag,
   Trash
 } from "lucide-react";
